@@ -49,7 +49,6 @@ def ensure_container():
             check=True,
         )
 
-
 async def ask_approval(tool_name: str, tool_input: dict[str, Any], context: ToolPermissionContext):
     # Wait up to APPROVAL_TIMEOUT for a y/N answer; silence or anything but y denies
     try:
